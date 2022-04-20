@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login</title>
+	<link rel="stylesheet" href="Login.css" type="text/css"/>
+	<link  rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<meta name="keywords" content="HTML, CSS, JavaScript">
+<script>
+
+
+</script>
+</head>
+
+<body class="body">	
+	<nav id="nav-bar">
+		<a href="home.html"><img src="images/crazyrentals.jpeg" width="250px" height="75px" /></a>
+		<div class="links">
+			 <a href="home.html" class="hyper-link">Home</a>
+			 <a href="#" class="hyper-link">Booknow</a>
+			 <a href="aboutus.html" class="hyper-link">AboutUs</a>
+			 <a href="registration.html" class="hyper-link">Signup</a>
+		</div>
+	</nav>
+
+<br><br><br><br><BR><BR>
+
+<form class="lform" action="Login" method="post" autocomplete="off">
+	
+	<img src="images/login.jpeg" width="120" height="120" class="img1"></img><br><br>
+	<span><i class="fa fa-envelope" aria-hidden="true" style="color:white;margin-left:-4px;"></i></span>
+	
+	<input  class="input" type="text' id="login"   name="login" placeholder="Email or Mobile Number" width="100%"  size="35" required></input><br><br>
+	<i class="fa fa-lock" aria-hidden="true" style="color:white;"></i>
+	<span ><input class="input" type="password" name="pwd" placeholder="Password"  width="100%" size="35" required></span></input><br><br>
+	
+	<input type="checkbox" id="checkbox" name="remem"></input>
+	<label for="remem" style="font-size:17px;color:white;"><ins>Remember Me</ins></label><br><br>
+	
+	<input type="submit" value="Login" class="logbutton" onclick="validate()"></input><br><br>
+	<div style="display:flex;">
+	<p class="p">Don't have an account?</p>
+	<a href="registration.html" style="text-decoration:none;"><p style="color:orange;font-size:large;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;padding-left:5px;">Sign up</p></a>
+	</div>
+	
+	
+	<div style="display:flex;">
+	<p class="p"> </p><BR>
+	<a href="forgotpwd.html" style="text-decoration:none;"><p style="color:aqua;font-size:large;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;padding-left:5px;"><BR><B><U>FORGOT YOUR PASSWORD?</U></B></p></a>
+	</div>
+	
+	
+	
+		
+</form>
+<div class="extra">
+	<p>Copyright &#169; Crazy Rentals 2021.All Rights Reserved</p>
+</div>
+</body>
+</html>

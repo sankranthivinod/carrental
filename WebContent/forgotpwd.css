@@ -1,0 +1,107 @@
+
+
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+
+.input{
+	padding:15px;
+	border-radius:10px;
+	font-size:15px;
+	transition: all 0.4s ease 0s;
+
+}
+.lform{
+	margin-left:990px;
+	margin-top:50px;
+	position:absolute;
+	padding:30px;
+	border:3px solid white;
+	border-radius:25px;
+	background-color:rgba(0, 0, 0, 0.5);
+	transition: all 0.4s ease 0s;
+}
+.logbutton{
+	color:whitesmoke;
+	padding-top:10px;
+	padding-bottom:10px;
+	padding-left:35px;
+	padding-right:35px;
+	margin-left:90px;
+	background-color:orange;
+	font-weight:bold;
+	border-radius:12px;
+	cursor:pointer;
+	transition: all 0.4s ease 0s;
+}
+.img1{
+	margin-left:100px;
+	border-radius : 50%;
+}
+.body{
+	background-image:url("images/loginlogo.jpg"); 
+	background-position: center;
+	background-size: cover;
+	background-repeat :no-repeat;
+	width:100%;
+	height:100%;
+	transition: all 0.4s ease 0s;
+
+}
+.p{
+	color:white;	
+	font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	font-size:large;
+	transition: all 0.4s ease 0s;
+	
+}
+#nav-bar{
+    background-color:orange;
+    display:flex;
+    width:100%;
+    height:75px;
+    position:relative;
+    bottom:0;
+    overflow:hidden;
+    position:fixed;
+	top:0;
+	transition: all 0.4s ease 0s;
+	
+}
+.links{
+    padding:25px; 
+    margin-left:980px;
+    display:flex;
+	align-items:center;
+	transition: all 0.4s ease 0s;
+	
+}
+img{
+	transition: all 0.4s ease 0s;
+}
+
+
+.hyper-link{
+    text-decoration:none;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-right:40px;
+    color:whitesmoke;
+    font-weight:bold;
+    font-size:large;
+    transition: all 0.4s ease 0s;
+}
+.extra{
+	background-color: orange;
+    text-align:center;
+    padding:12px;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color:whitesmoke;
+    font-size:17px;
+	margin-top:653px;
+	transition: all 0.4s ease 0s;
+}
+a:hover{
+    color:red;
+}

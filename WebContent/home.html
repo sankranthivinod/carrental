@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Crazy Rentals</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="home.css" type="text/css"/>
+        
+    </head>
+    <body>
+        <nav id="nav-bar">
+            <a href="home.html"><img src="images/crazyrentals.jpeg" width="250px" height="75px" /></a>
+            <div class="links">
+                 <a href="#" class="hyper-link">Booknow</a>
+                 <a href="aboutus.html" class="hyper-link">AboutUs</a>
+                 <a href="registration.html" class="hyper-link">Signup</a>
+                 <a href="Login.html" class="hyper-link">Login</a>
+            </div>
+        </nav>
+         <div class="image ">
+                <img src="images/h1.jpg"  class="mySlides" width="100%" height="800px"/>
+                <img  src="images/h2.jpg" class="mySlides" width="100%" height="800px"/>
+                <img  src="images/h3.jpg" class="mySlides" width="100%" height="800px"/>
+                <img  src="images/h4.jpg" class="mySlides" width="100%" height="800px"/>
+            <div class="center">
+           <a href="#"><button class="button-1">Start Your Journey Now !</button></a>
+                </div>
+        </div>
+        
+
+        <div class="bottom">
+                <div>
+                    <p>Download Crazy Rentals app for exciting offers</p>
+                   <a href="https://play.google.com/store" target="_blank"><img src="images/playstore.png" width="90px" height="90px"/></a>
+                   <a href="https://www.apple.com/app-store/" target="_blank"><img src="images/appstore.png" width="90px" height="90px" /></a>
+                </div>
+                <div class="bottom-1">
+                     <p>Social Media</p><br>
+                   <a href="https://www.instagram.com/" target="_blank"><img src="images/insta.png" class="social-img"/></a> 
+                   <a href="https://www.facebook.com/" target="_blank"><img src="images/fb.png" class="social-img"/></a> 
+                   <a href="https://twitter.com/" target="_blank"><img src="images/twitter.png" class="social-img"/></a> 
+                   <a href="https://gmail.com/" target="_blank"><img src="images/g+.png" class="social-img"/></a> 
+                   <a href="https://gmail.com/" target="_blank"><img src="images/linkedin.png" class="social-img"/></a> 
+                </div>
+        </div>
+        <div class="extra">
+            <p>Copyright &#169; Crazy Rentals 2021.All Rights Reserved</p>
+        </div>
+        <script>
+            var myIndex = 0;
+            carousel();
+
+        function carousel() {
+                        var i;
+                        
+                        var x = document.getElementsByClassName("mySlides");
+                        for (i = 0; i < x.length; i++) {
+                            x[i].style.display = "none";  
+                    }
+                    myIndex++;
+                    if (myIndex > x.length) {myIndex = 1}    
+                    x[myIndex-1].style.display = "block";  
+                    setTimeout(carousel, 2000); // Change image every 2 seconds
+                }
+        </script>    
+
+    </body>
+</html>

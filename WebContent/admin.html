@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body{
+  background-image:url('images/database.png');
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-size:100% 789.399px;
+}
+.buttons{ 
+    margin-top:170px;
+    background-color:rgba(0, 0, 0, 0.5);
+    margin-left: 630px;
+    margin-right:630px;
+    border:3px solid white;
+   	border-radius:25px;
+    padding:17px ;
+    text-align:center;
+    padding-top:25px;
+    padding-bottom:25px;
+   
+}
+button{
+  padding:15px;
+  background-color:#008080;
+  border:none;
+  color:whitesmoke;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size:15px;
+  cursor:pointer;
+  width:190px;
+  
+  
+}
+
+button:hover{
+  background-color:orange;
+}
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+}
+#nav-bar{
+    background-color:orange;
+    display:flex;
+    width:100%;
+    height:75px;
+    position:relative;
+    bottom:0;
+    overflow:hidden;
+   position:fixed;
+    top:0;
+}
+.links{
+    padding:25px; 
+    margin-left:700px;
+    display:flex;
+    align-items:center;
+}
+
+.hyper-link{
+    text-decoration:none;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-right:40px;
+    color:whitesmoke;
+    font-weight:bold;
+    font-size:large;
+    transition: all 0.4s ease 0s;
+    
+}
+.extra{
+    background-color: orange;
+    text-align:center;
+    padding:11px;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color:whitesmoke;
+    font-size:17px;
+    margin-top:211px;
+}
+
+</style>
+
+</head>
+<body>
+  <nav id="nav-bar">
+    <a href=""><img src="images/crazyrentals.jpeg" width="250px" height="75px" /></a>
+    <div class="links">
+        
+    </div>
+</nav>
+<div class="buttons">
+   <a href="AddingCar.html"> <button title="Adding a CAR">Add car</button></a><br><br><br>
+    <a href="cars.jsp"><button title="Removing a Car">LIST OF AVAILABLE CARS</button></a><br><br><br>
+   <a href= "users.jsp"> <button title="List of Registered Cars">LIST OF REGISTERED USERS</button></a>
+</div>
+<div class="extra">
+  <p>Copyright &#169; Crazy Rentals 2021.All Rights Reserved</p>
+</div>
+</body>
+</html>

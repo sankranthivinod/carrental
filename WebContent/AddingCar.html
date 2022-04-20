@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>ADD A CAR </title>
+<style>
+	*{
+		border:0;
+		box-sizing: border-box;
+		margin:0;
+	}
+#nav-bar{
+    background-color:orange;
+    display:flex;
+    width:100%;
+    height:75px;
+    position:relative;
+    bottom:0;
+    overflow:hidden;
+   position:fixed;
+    top:0;
+}
+body{
+	background-image:url('images/background.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+h1{
+	font-family: sans-serif;
+	margin-top:100px;
+	text-align: center;
+	color:#FAEBD7;
+	margin-left:15px;
+
+	}
+	label{
+		font-weight:bold;
+		font-size:large;
+		color:whitesmoke;
+	}
+.form{
+	margin-left:520px;
+	margin-top:30px;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	border:3px solid white;
+	border-radius:25px;
+	background-color:rgba(0, 0, 0, 0.5);
+	padding:30px;
+	margin-right:520px;
+}
+
+#car-name{
+	margin-left:100px;
+	border-radius:7px;
+}
+#car-num{
+	margin-left:75px;
+	border-radius:7px;
+}
+#fuel-type{
+	margin-left:105px;
+	border-radius:7px;
+}
+#capacity{
+	margin-left:109px;
+	border-radius:7px;
+}
+#cost-kilo{
+	margin-left:13px;
+	border-radius:7px;
+}
+input[type=file]{
+	margin-left:88px;
+	padding:10px;
+	border-radius:7px;
+}
+#submit-reset{
+	margin-left:60px;
+	padding-left:10px;
+}
+input{
+	padding:9px;
+	width:160px;
+}
+#car-image{
+	padding:10px;
+}
+input[type=submit]{
+	color:whitesmoke; 
+	background-color:orange; border:none;
+	 font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	 cursor:pointer;
+	 border-radius:7px;
+	 margin-right:18px;
+	 
+		font-size:large;
+	
+}
+input[type=reset]{
+	color:whitesmoke; 
+	background-color:orange; border:none;
+	 font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	cursor:pointer;
+	border-radius:7px;
+	
+		font-size:large;
+	
+}
+input[type=submit]:hover{
+	opacity:0.5;
+}
+input[type=reset]:hover{
+	opacity:0.5;
+}
+.extra{
+	background-color: orange;
+    text-align:center;
+    padding:10px;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color:whitesmoke;
+    font-size:17px;
+	margin-top:105px;
+	transition: all 0.4s ease 0s;
+
+}
+
+</style>
+</head>
+<body>
+	<nav id="nav-bar">
+		<a href="welcomepage.html"><img src="images/crazyrentals.jpeg" width="250px" height="75px" /></a>
+	</nav>
+	
+	<h1>ADD CAR</h1>
+	<form action="ADDCAR" method="post" class="form" enctype="multipart/form-data">
+	
+	<label>CAR NAME</label> : 
+	<input type="text"  id="car-name"  name="cname" required  placeholder="CAR NAME "/> <br><br>
+	<label >CAR NUMBER :</label> 
+	<input id="car-num" type="text" name="cnum" required placeholder="CAR NUMBER "/><br><br>
+	<label >FUEL TYPE :</label> 
+	<input type="text" id="fuel-type"name="cfuel" required placeholder="FUEL TYPE"/><br><br>
+	<label >CAPACITY :</label> 
+	<input  type="number" id="capacity" name="ccap" required placeholder="CAPACITY"/><br><br>
+	<label >COST PER KILOMETER:</label>
+	 <input type="number" id="cost-kilo" name="ccost" required placeholder="COST PER KILOMETER" /><br><br>
+	<label >CAR IMAGE</label> : 
+	<input  type="file" name="cimage"required placeholder=""/><br><br><br>
+
+		<div id="submit-reset">
+	<input type="submit" value="ADD THE CAR"/>
+	<input type="reset"    value="CLEAR"/>
+</div>
+</form>
+<div class="extra">
+	<p>Copyright &#169; Crazy Rentals 2021.All Rights Reserved</p>
+</div>
+</body>
+</html>

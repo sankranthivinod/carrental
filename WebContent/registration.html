@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sign Up</title>
+	<link rel="stylesheet" href="registration.css" type="text/css"/>
+	<script type="text/javascript" >
+	
+	function prom(){
+	
+		
+		
+		
+		var name =document.getElementById("name").value;
+		var address = document.getElementById("address").value;
+		var mobileno = document.getElementById("contactno").value;
+		var pass = document.getElementById("password").value;
+		var cpass = document.getElementById("cpass").value;
+		var email = document.getElementById("email").value;
+		var fage = document.getElementById("age").value;
+		var i = 0,n=0,c;
+		
+		while( i < name.length ){
+		if(  (name.length == 0) || (name[i] >= '0' && name[i] <= '9') || !(name[0] >= 'A' && name[0]  <= 'Z' ) ){	
+		   	document.getElementById("nameerr").innerHTML=" PROVIDE A VALID NAME";
+			document.getElementById("name").focus();
+			return false;
+		}
+		i++;
+		}
+	
+		
+		n=0;
+		while(n < mobileno.length){
+			if((mobileno.length==0) || !(mobileno[n] >='0' && mobileno[n] <= '9')){
+				document.getElementById("contacterr").innerHTML="PROVIDE A VALID CONTACT NO"
+				document.getElementById("contactno").focus();
+				return false;
+			}
+		n++;
+		}
+	 
+		
+		if((Number(fage)<18)||(Number(fage)>40)){
+			document.getElementById("ageerr").innerHTML="AGE SHOULD BE ABOVE 18 AND LESS THAN 40"
+			document.getElementById("age").focus();
+			return false;
+		}
+		
+		i=0;
+		while(i<pass.length){
+		if( !(pass[i] >='a' && pass[i] <='z')){
+			document.getElementById("passworderr").innerHTML="SHOULD HAVE ONLY LETTERS"
+			document.getElementById("password").focus();
+			return false;
+			}
+		i++;
+		}
+		
+		if(pass!=cpass){
+			document.getElementById("cpasserr").innerHTML="PASSWORDS DO NOT MATCH"
+			document.getElementById("cpass").focus();
+			return false;
+		}
+		
+		
+		
+	}
+	
+	</script>
+</head>
+
+<body class="body">
+	<nav id="nav-bar">
+		<a href="home.html"><img src="images/crazyrentals.jpeg" width="250px" height="75px" /></a>
+		<div class="links">
+			 <a href="home.html" class="hyper-link">Home</a>
+			 <a href="#" class="hyper-link">Booknow</a>
+			 <a href="aboutus.html" class="hyper-link">AboutUs</a>
+			 <a href="Login.html" class="hyper-link">Login</a>
+		</div>
+	</nav>
+
+<form   class="regform"  method="post" action="Registration_form"  autocomplete="off">
+
+<label class="label">FULLNAME</label>
+<input  type="text" id="name" class="name" placeholder="ENTER FULLNAME" name="fname"  required ></input>
+<i style="text-decoration:bold;margin-left:10px;color:aqua;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;" id="nameerr">&nbsp;&nbsp;</i><br><br>
+
+<label class="label">GENDER<label>&nbsp;&nbsp;&nbsp;
+
+<span class="gender">
+<span><input    type="radio" id="gender"  name="gender"   value="MALE" required ></input><label class="g1">MALE</label></span>
+<span class="gender1"><input    type="radio" id="gender"  name="gender" value="FEMALE"  required></input><label class="g1">FEMALE</label><br><br></span>
+</span>
+
+<label class="label">CONTACT NUMBER</label>
+<input  type="text" id="contactno" placeholder="xxxxxxxxxx"  name="mobileno" minlength="10" maxlength="10" required >
+<i style="text-decoration:bold;margin-left:10px;color:aqua;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;" id="contacterr">&nbsp;&nbsp;</i></input><br><br>
+
+<label class="label">AGE</label>
+<input type="text" id="age" size="2"  name="age" placeholder="18" value="18" required></input>
+<i style="text-decoration:bold;margin-left:10px;color:aqua;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;" id="ageerr">&nbsp;&nbsp;</i><br><br>
+
+<label class="label">EMAIL ADDRESS</label>
+<input type="email"  id="email" placeholder="ENTER YOUR MAIL"  name="email" required ></input><br><br>
+
+<label class="label">PASSWORD</label>
+<input type="password"  id="password" placeholder="SET YOUR PASSWORD" name="pwd" required minlength="8" ></input>
+<i style="text-decoration:bold;margin-left:0px;color:aqua;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;" id="passworderr">&nbsp;&nbsp;</i><br><br>
+
+<label class="label">CONFIRM PASSWORD</label>
+<input type="password"  id="cpass" placeholder="CONFIRM PASSWORD" required ></input>
+<i style="text-decoration:bold;margin-left:10px;color:aqua;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;" id="cpasserr">&nbsp;&nbsp;</i><br><br>
+
+<label class="label">ADDRESS </label><br><br>
+<textarea  cols="40"  rows="5" id="address" placeholder="ENTER YOUR ADDRESS" name="address"   required ></textarea><br><br>
+
+<input type="submit" value="Sign up"  id="button"  onclick=" return prom()"   />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="reset"  value="Clear" id="button"/>
+
+
+</form>
+</body>
+</html>
